@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Part-2</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form>
+        <div>
+            Date of Birth <input name="dob" type="date">
+        </div>
+        <div>
+            Country
+            <select name="country">
+                <option value="Ind">India</option>
+                <option value="Cn">China</option>
+                <option Value="US">United States</option>
+                <option value="Gm">Germany</option>
+                <option Value="JP">Japan</option>
+            </select>
+        </div>
+<div>
+    Gender<br>
+    <input type="radio" id="male" name="gender">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender">
+    <label for="female">Female</label>
+    <input type="radio" id="others" name="gender">
+    <label for="others">Others</label>
+</div>
+<div>
+    Select a Gift
+<select name="select a Gift">
+    <optgroup label="Home product">
+        <option>bag</option>
+    </optgroup>
+    <optgroup label="Electronics">
+        <option>Mobile</option>
+        <option>Head phones</option>
+    </optgroup>
+    <optgroup label="Foods">
+        <option>Chocolate</option>
+        <option>Dry Fruits</option>
+    </optgroup>
+    <optgroup label="Toys">
+        <option>Doll</option>
+        <option>Remote Plane</option>
+        <option>Remote Car</option>
+    </optgroup>
+    </select>
+</div>
+<div>
+    <label for="nation">Nationality</label>
+    <input id="nation" list="nationality" name="nationality">
+    <datalist id="nationality">
+        <option value="India"></option>
+        <option value="China"></option>
+        <option value="Japan"></option>
+        <option value="UK"></option>
+        <option value="USA"></option>
+    </datalist>
+</div>
+<input type="submit" value="Register">
+    </form>
+</body>
+</html>

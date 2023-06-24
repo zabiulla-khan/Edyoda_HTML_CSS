@@ -1,0 +1,161 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  font-size:16px;
+}
+body {
+  margin: 0;
+}
+.logo {
+  width: 20%;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  padding-top: 20px;
+}
+.topbar-end {
+  width: 20%;
+}
+.topbar-end button {
+  background-color: #ffd8d8;
+  color: #a389cc;
+  font-weight: 790;
+  letter-spacing: -1px;
+  float: right;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+.menu a {
+  text-decoration: none;
+  color: grey;
+  height: 20px;
+}
+.menu a:hover {
+  color: black;
+  border-bottom: 3px solid #5243c0;
+}
+main {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.heading {
+  font-size: 80px;
+  letter-spacing: -1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.work-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #5243c0;
+}
+.text-section {
+  width: 40%;
+  /* border: 2px solid black; */
+}
+.img-section {
+  width: fit-content;
+  /* border: 2px solid black; */
+}
+.text {
+  margin-left: 90px;
+}
+.new-account {
+  margin-top: 30px;
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.new-account button {
+  border: none;
+  border-radius: 30px;
+  width: 150px;
+  height: 60px;
+  background-color: #5243c0;
+  color: #ffffff;
+  cursor: pointer;
+}
+.cards {
+  margin-top: 70px;
+}
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  border: 1px solid #f8f8fb;
+  border-radius: 10px;
+  background-color: #f8f8fb;
+  width: 70%;
+  font-size: 16px;
+}
+.card-img {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: url("tick-gray.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.card-text {
+  width: 35%;
+  margin-top: 15px;
+}
+.card-img2 {
+  width: 35px;
+  height: 35px;
+  margin-top: 8px;
+}
+.card-date {
+  width: 15%;
+  margin-top: 10px;
+  margin-top: 15px;
+}
+.colour-dot {
+  margin-top: 20px;
+  width: 20px;
+  height: 10px;
+  background-color: #fed7da;
+  border-radius: 10px;
+}
+.colour-dot2 {
+  margin-top: 20px;
+  width: 20px;
+  height: 10px;
+  background-color: #fd6534;
+  border-radius: 10px;
+}
+.colour-dot3 {
+  margin-top: 20px;
+  width: 20px;
+  height: 10px;
+  background-color: #9ed095;
+  border-radius: 10px;
+}
+.colour-dot4 {
+  margin-top: 20px;
+  width: 20px;
+  height: 10px;
+  background-color: #ffe4a0;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: scale(1.1);
+  width: 66%;
+  box-shadow: 5px 5px 5px 5px #f8f8fb;
+  background-color: white;
+}
+.card:hover .card-img {
+  background-image: url("tick-blue.png");
+}

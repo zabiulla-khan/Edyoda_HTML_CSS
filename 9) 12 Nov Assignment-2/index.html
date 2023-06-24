@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EdYoda | Online Courses</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      .topbar {
+        padding: 6px 78px;
+        background-color: #fff;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: sticky;
+        top: 0;
+      }
+      .categories {
+        padding: 6px 14px;
+        color: #0084ff;
+        width: auto;
+        border-radius: 15px;
+        border: 1px solid #0084ff;
+        margin: 5px;
+        cursor: pointer;
+        background-color: transparent;
+      }
+      .container {
+        margin-bottom: 20px;
+        font-size: 16px;
+        padding-top: 16px;
+      }
+      .thumbnail {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        /* margin:auto; */
+        /* border: 2px solid orange; */
+      }
+      .card {
+        width: 280px;
+        border: 1px solid #0084ff;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 10px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        background-color: white;
+        cursor: pointer;
+      }
+      .details {
+        padding: 10px 24px;
+        /* border: 2px solid red; */
+        margin: 2.5px;
+      }
+      .title {
+        font-size: 23px;
+        text-align: left;
+        margin: 0;
+        font-weight: 500;
+      }
+      .author {
+        padding-top: 4px;
+      }
+      .text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.43;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 4px 0;
+      }
+      .edCatog {
+        padding-top: 26px;
+        cursor: pointer;
+        /* padding-bottom:0px; */
+        /* border: 2px solid yellow; */
+      }
+      .blank {
+        /* border:2px solid blue; */
+        width: 70%;
+      }
+      main {
+        width: fit-content;
+        /* border:2px solid green; */
+        padding: 3px;
+        margin: auto;
+      }
+      footer {
+        width: auto;
+        /* padding-top: 40px; */
+      }
+      .foot {
+        display: flex;
+        flex-direction: row;
+        background-color: #172146;
+        padding: 70px 13%;
+        color: #ffffff;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        /* margin-bottom: 5px; */
+      }
+      .foot-heading {
+        color: #ffffff80;
+        font-size: 15.21px;
+      }
+      .foot-list {
+        padding: 0;
+        line-height: 30px;
+        font-size: 13px;
+        cursor: pointer;
+        /* width:200px; */
+        /* margin-left: 140px; */
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: aliceblue;
+      font-family: 'Raleway', sans-serif;
+      margin: 0; overflow-x:hidden;/*  hide-horizontal-scrollbar*/
+    "
+  >
+    <header class="topbar">
+      <div style="position: absolute; position: relative; bottom: 10px">
+        <h1
+          style="
+            margin-bottom: 0px;
+            font-weight: 900;
+            width: 130px;
+            font-size: 32px;
+            color: #0084ff;
+            cursor: pointer;
+          "
+        >
+          EDYODA
+        </h1>
+        <p
+          style="
+            margin: 0;
+            font-weight: 500;
+            font-family: 'Raleway';
+            font-style: italic;
+            margin-top: -7px;
+            font-size: 16px;
+            cursor: pointer;
+          "
+        >
+          Stories
+        </p>
+      </div>
+      <div class="edCatog">
+        <a
+          style="
+            color: #000;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.9px;
+          "
+          >Explore Categories</a
+        ><svg style="width:25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="12" height="12" viewBox="0 0 256 256" xml:space="preserve">
+
+            <defs>
+            </defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                <path d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+            </g>
+            </svg>
+      </div>
+      <div class="blank"></div>
+    </header>
+    <main>
+      <div class="container">
+        <h1 style="color: #000; font-weight: 600; margin: 0; font-size: 36px">
+          Trending Posts
+        </h1>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20px" height="20px" viewBox="0 0 256 256" xml:space="preserve">
+
+            <defs>
+            </defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                <path d="M 52.537 80.466 V 45.192 L 84.53 2.999 C 85.464 1.768 84.586 0 83.041 0 H 6.959 C 5.414 0 4.536 1.768 5.47 2.999 l 31.994 42.192 v 43.441 c 0 1.064 1.163 1.719 2.073 1.167 l 11.758 -7.127 C 52.065 82.205 52.537 81.368 52.537 80.466 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(3,163,226); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+            </g>
+            </svg><a style="font-size: 17px; font-weight: 500; margin-left: px"
+          >Filter by Category</a
+        >
+        <div>
+          <button
+            style="color: #fff; background-color: #0084ff"
+            class="categories"
+          >
+            All
+          </button>
+          <button class="categories">Artificial Intelligence</button>
+          <button class="categories">Cloud Computing</button>
+          <button class="categories">DevOps</button>
+          <button class="categories">Programming Languages</button>
+          <button class="categories">Mobile Application Development</button
+          ><br />
+          <button class="categories">Technology and Tools</button>
+          <button class="categories">Get a job in a Tech Company</button>
+          <button class="categories">Others</button>
+        </div>
+      </div>
+      <section style="width: 100%">
+        <div class="card">
+          <img
+            class="thumbnail"
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/learn_machine_learning_courses_online.png"
+            alt="machine"
+          />
+          <div class="details">
+            <h1 class="title">Machine learning Online courses by EdYoda</h1>
+            <div class="author">
+              <a
+                style="
+                  color: #0096ff;
+                  font-size: 14px;
+                  font-weight: 500;
+                  text-decoration: none;
+                "
+                href="bird"
+                >steven Bird</a
+              >
+              |
+              <span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+                >25 oct 2015</span
+              >
+            </div>
+            <p class="text">
+              Machine learning has become more and more integrated into our
+              lives. It is the branch of artificial intelligence (AI) that
+              powers chatbots, customizes the ...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="thumbnail"
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/3.png"
+            alt="machine"
+          />
+          <div class="details">
+            <h1 class="title">Big Data a leading innovation - Online courses by EdYoda</h1>
+            <div class="author">
+              <a
+                style="
+                  color: #0096ff;
+                  font-size: 14px;
+                  font-weight: 500;
+                  text-decoration: none;
+                "
+                href="mary"
+                >Mary Ann Liebert</a
+              >
+              |
+              <span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+                >18 Jun 2019</span
+              >
+            </div>
+            <p class="text">
+                Big Data is the leading peer-reviewed journal covering the challenges and opportunities in collecting, analyzing, and disseminating vast amo... 
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="thumbnail"
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/4.png"
+            alt="cloud"
+          />
+          <div class="details">
+            <h1 class="title">Cloud Computing Online courses by EdYoda</h1>
+            <div class="author">
+              <a
+                style="
+                  color: #0096ff;
+                  font-size: 14px;
+                  font-weight: 500;
+                  text-decoration: none;
+                "
+                href="bloor"
+                >Robind Bloor</a
+              >
+              |
+              <span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+                >19 Feb 2007</span
+              >
+            </div>
+            <p class="text">
+                Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active ...
+            </p>
+          </div>
+        </div>
+      </section>
+      <section style="width: 100%">
+        <div class="card">
+          <img
+            class="thumbnail"
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/5.png"
+            alt="cyber"
+          />
+          <div class="details">
+            <h1 class="title">Cyber Security Online courses by EdYoda</h1>
+            <div class="author">
+              <a
+                style="
+                  color: #0096ff;
+                  font-size: 14px;
+                  font-weight: 500;
+                  text-decoration: none;
+                "
+                href="kevin"
+                >Kevin Mitnick</a
+              >
+              |
+              <span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+                >15 Aug 2011</span
+              >
+            </div>
+            <p class="text">
+                Computer security, cybersecurity, or information technology security is the protection of computer systems and networks from information disclosure,...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="thumbnail"
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/automation-testing-an-overview-2.png"
+            alt="Testing"
+          />
+          <div class="details">
+            <h1 class="title"> Automation Testing online courses by EdYoda</h1>
+            <div class="author">
+              <a
+                style="
+                  color: #0096ff;
+                  font-size: 14px;
+                  font-weight: 500;
+                  text-decoration: none;
+                "
+                href="graham"
+                >Dorothy Graham</a
+              >
+              |
+              <span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+                >11 Dec 1999</span
+              >
+            </div>
+            <p class="text">
+                Automation Testing is a software testing technique that performs using special automated testing software tools to execute a test case suite. On the contrary...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="thumbnail"
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/what_is_isa_blog_1.png"
+            alt="Income"
+          />
+          <div class="details">
+            <h1 class="title">ISA - Pay After Placement offers by EdYoda</h1>
+            <div class="author">
+              <a
+                style="
+                  color: #0096ff;
+                  font-size: 14px;
+                  font-weight: 500;
+                  text-decoration: none;
+                "
+                href="edyoda"
+                >EdYoda</a
+              >
+              |
+              <span
+                style="
+                  color: rgba(0, 0, 0, 0.7);
+                  font-size: 14px;
+                  font-weight: 300;
+                "
+                >20 Nov 2022</span
+              >
+            </div>
+            <p class="text">
+              ISA is an Income Share Agreement scheme which helps many of the graduates to learn Courses like Full Stack Development,Data scientist,.etc paying fee for cou...
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="foot">
+        <div>
+          <h3 class="foot-heading">EDYODA</h3>
+          <ul style="list-style-type: none" class="foot-list">
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Contact Us</li>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="foot-heading">RESOURCES</h3>
+          <ul style="list-style-type: none" class="foot-list">
+            <li>Learning Paths</li>
+            <li>Courses</li>
+            <li>Learning Videos</li>
+            <li>Educators</li>
+            <li>EdYoda Stories</li>
+            <li>University</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="foot-heading">FOR ENTERPRISES</h3>
+          <p style="cursor:pointer;font-size:13px">Train Your Employees</p>
+          <h3 class="foot-heading">QUICK LINKS</h3>
+          <ul style="list-style-type: none" class="foot-list">
+            <li>Learn and Earn</li>
+            <li>Become a Learning-Enabler</li>
+            <li>Tips for Learning-Enabler</li>
+            <li>Request New Topic</li>
+            <li>Certification</li>
+            <li>Affiliate Program</li>
+          </ul>
+        </div>
+        <div style="font-size:13px">
+          <h3 class="foot-heading">CONNECT</h3>
+          <div style="cursor:pointer">
+          <p>
+            1st Floor,<br />
+            Gopalan Millennium Tower,<br />
+            ITPL Main Road,Brookefield,<br />
+            Bengaluru,Karnataka-560037,<br />India
+          </p>
+          <p> <img style="width: 20px;margin-bottom: -5px;" src="icons8-secured-letter-50.png" alt="mail" /> hello@edyoda.com</p>
+          <span style="letter-spacing:15px">
+            <img style="width:23px;" src="icons8-location-50.png" alt="location" />
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="25px" height="25px">
+                <g id="surface150347200">
+                <rect x="0" y="0" width="24" height="24" style="fill:rgb(9.019608%,12.941177%,27.450982%);fill-opacity:1;stroke:none;"/>
+                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 21.632812 4.03125 C 20.820312 4.414062 19.433594 5.136719 18.734375 5.277344 C 18.707031 5.28125 18.6875 5.292969 18.660156 5.300781 C 17.847656 4.496094 16.734375 4 15.5 4 C 13.015625 4 11 6.015625 11 8.5 C 11 8.632812 10.988281 8.871094 11 9 C 7.78125 9 5.433594 7.320312 3.671875 5.164062 C 3.4375 4.871094 3.1875 5.023438 3.136719 5.230469 C 3.019531 5.695312 2.980469 6.476562 2.980469 7.03125 C 2.980469 8.433594 4.074219 9.808594 5.777344 10.660156 C 5.464844 10.742188 5.117188 10.800781 4.757812 10.800781 C 4.335938 10.800781 3.847656 10.6875 3.421875 10.464844 C 3.261719 10.382812 2.921875 10.40625 3.023438 10.808594 C 3.425781 12.429688 5.273438 13.566406 6.925781 13.894531 C 6.550781 14.117188 5.75 14.070312 5.382812 14.070312 C 5.246094 14.070312 4.773438 14.039062 4.46875 14.003906 C 4.1875 13.96875 3.761719 14.039062 4.117188 14.585938 C 4.890625 15.75 6.632812 16.484375 8.136719 16.511719 C 6.753906 17.597656 4.492188 17.992188 2.328125 17.992188 C 1.890625 17.980469 1.910156 18.480469 2.265625 18.664062 C 3.863281 19.503906 6.476562 20 8.347656 20 C 15.777344 20 20 14.335938 20 9 C 20 8.914062 19.996094 8.734375 19.996094 8.550781 C 19.996094 8.535156 20 8.515625 20 8.5 C 20 8.472656 19.992188 8.445312 19.992188 8.417969 C 19.988281 8.28125 19.984375 8.15625 19.984375 8.089844 C 20.570312 7.664062 21.472656 6.925781 21.929688 6.363281 C 22.085938 6.171875 21.960938 5.9375 21.75 6.011719 C 21.207031 6.199219 20.265625 6.566406 19.679688 6.636719 C 20.855469 5.855469 21.4375 5.179688 21.9375 4.425781 C 22.109375 4.167969 21.894531 3.90625 21.632812 4.03125 Z M 21.632812 4.03125 "/>
+                </g>
+                </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="25px" height="25px">
+                <g id="surface150363495">
+                <rect x="0" y="0" width="24" height="24" style="fill:rgb(9.019608%,12.941177%,27.450982%);fill-opacity:1;stroke:none;"/>
+                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 17.523438 9 L 14 9 L 14 7 C 14 5.96875 14.085938 5.316406 15.5625 5.316406 L 17.429688 5.316406 L 17.429688 2.136719 C 16.523438 2.042969 15.609375 1.996094 14.691406 2 C 11.980469 2 10 3.65625 10 6.699219 L 10 9 L 7 9 L 7 13 L 10 13 L 10 22 L 14 22 L 14 12.996094 L 17.066406 12.996094 Z M 17.523438 9 "/>
+                </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" width="25px" height="25px">
+                    <g id="surface150138025">
+                    <rect x="0" y="0" width="30" height="30" style="fill:rgb(9.019608%,12.941177%,27.450982%);fill-opacity:1;stroke:none;"/>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 9 25 L 4 25 L 4 10 L 9 10 Z M 6.5 8 C 5.117188 8 4 6.878906 4 5.5 C 4 4.117188 5.121094 3 6.5 3 C 7.878906 3 9 4.121094 9 5.5 C 9 6.878906 7.878906 8 6.5 8 Z M 27 25 L 22.191406 25 L 22.191406 17.699219 C 22.191406 15.960938 22.160156 13.71875 19.695312 13.71875 C 17.191406 13.71875 16.804688 15.617188 16.804688 17.574219 L 16.804688 25 L 12 25 L 12 9.988281 L 16.613281 9.988281 L 16.613281 12.039062 L 16.679688 12.039062 C 17.320312 10.859375 18.890625 9.617188 21.230469 9.617188 C 26.101562 9.617188 27 12.726562 27 16.765625 C 27 16.765625 27 25 27 25 Z M 27 25 "/>
+                    </g>
+                    </svg>
+                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="25px"><path d="M5.83,23.616c12.568-5.529,28.832-12.27,31.077-13.203c5.889-2.442,7.696-1.974,6.795,3.434 c-0.647,3.887-2.514,16.756-4.002,24.766c-0.883,4.75-2.864,5.313-5.979,3.258c-1.498-0.989-9.059-5.989-10.7-7.163 c-1.498-1.07-3.564-2.357-0.973-4.892c0.922-0.903,6.966-6.674,11.675-11.166c0.617-0.59-0.158-1.559-0.87-1.086 c-6.347,4.209-15.147,10.051-16.267,10.812c-1.692,1.149-3.317,1.676-6.234,0.838c-2.204-0.633-4.357-1.388-5.195-1.676 C1.93,26.43,2.696,24.995,5.83,23.616z"/></svg>
+          </span>
+          <p>
+            &#169 2022 <br />
+            zekeLabs Technologies Private Limited
+          </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
